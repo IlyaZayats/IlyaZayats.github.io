@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <style>
+      li p {margin: 0}
+    </style>
   </head>
 
   <body>
+  <a id=“list_of_links”></a> Список ссылок:
     <ol>
-	  <li> <a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a> </li>
-	  <li> <a href="https://example.com/">Абсолютная на главную сайта example.com в протоколе https</a> </li>
+	  <li> <a href="http://example.com">Абсолютная гиперссылка на главную страницу сайта example.com</a> </li>
+	  <li> <a href="https://example.com">Абсолютная на главную сайта example.com в протоколе https</a> </li>
 	  <li> <a href="ftp://example.com/file.txt">Ссылка на файл на сервере FTP без авторизации</a> </li>
 	  <li> <a href="ftp://user:password@example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a> </li>
 	  <li> <a href="https://example.com#about">Ссылка на фрагмент страницы некоторого сайта</a> </li>
-	  <li> <a href="#about">Ссылка на фрагмент текущей страницы</a> </li>
-	  <li> <a href="https://example.com?about&id">Ссылка с двумя параметрами в URL</a> </li>
+	  <li> <a href="#list_of_links">Ссылка на фрагмент текущей страницы</a> </li>
+	  <li> <a href="https://example.com?parameter=value&color=red">Ссылка с двумя параметрами в URL</a> </li>
+	  <li> <a href="https://example.com/help" title="Помощь">Список ссылок основной навигации сайта с подписями title</a> </li>
+	  <li> <a>Cсылка без href</a> </li>
+	  <li> <a href="">Ссылка с пустым href</a> </li>
+	  <li> <a href="http://example.com"rel="nofollow">Cсылка, по которой запрещен переход поисковикам</a> </li>
+	  <li> <a href="http://example.com"rel="nofollow"><noindex>Запрещенная для индексации поисковиками</noindex></a> </li>
+	  <li> <p>Я помню чудное мгновенье: Передо мной явилась ты, Как мимолетное <a href="https://ru.wiktionary.org/wiki/%D0%B2%D0%B8%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5#Семантические_свойства_2"> виденье</a>, Как гений чистой красоты.</p>
+	  <li> <a href="http://example.com"><img src="" width="50" height="50" alt="Ссылка-изображение"></a> </li>
 	  
 	  
 	</ol>

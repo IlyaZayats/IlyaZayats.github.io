@@ -1,0 +1,26 @@
+header img {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+#bruh {
+    text-align:center;
+}
+
+#list {
+    list-style-position: inside;
+}
+
+#tablet {
+    margin: auto;
+    text-align: center;
+}
+
+#even {
+    color:dodgerblue;
+}
+
+#noteven{
+    color:yellow;
+}

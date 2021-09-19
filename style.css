@@ -4,16 +4,18 @@ header img {
     height: 60px;
 }
 
-#bruh {
-    text-align:center;
+#Title{
+    padding-top:20px;
 }
 
-#list {
-    list-style-position: inside;
+#content {
+    margin: auto;
+    max-width: 960px;
 }
 
 #tablet {
     margin: auto;
+    max-width: 960px;
     text-align: center;
 }
 
@@ -23,4 +25,12 @@ header img {
 
 #noteven{
     color:yellow;
+}
+#logo{
+    margin: auto;
+    max-width: 960px;
+}
+
+#forma{
+    margin-top: 150px;
 }

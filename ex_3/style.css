@@ -1,0 +1,80 @@
+#navigation{
+    display:flex;
+}
+
+#link_1, #link_2, #link_3{
+    background: #FFFF00;
+    margin: 10px;
+    padding: 30px;
+    flex:1;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#content ol, #content table, #superform{
+    margin: 10px;
+    background-color: rgb(228, 228, 228);
+}
+
+#content table{
+    text-align: center;
+}
+
+#superform{
+    text-align: center;
+}
+
+#head_of_ex3{
+    display: flex;
+}
+
+#head_of_ex3 main, #head_of_ex3 aside{
+    background-color: #4682B4;
+    margin: 20px;
+    padding: 20px;
+}
+
+#head_of_ex3 main{
+    text-align: center;
+    flex:6;
+    order:2;
+}
+
+#head_of_ex3 aside{
+    flex:1;
+    order:1;
+}
+
+table td, th{
+	border: 1px solid black;
+}
+
+#noteven_1, #noteven_2, #noteven_3{
+    background: #4682B4;
+}
+#even_1,#even_2 {
+    background: #FFFF00;
+}
+
+body footer{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(255, 2, 2);
+}
+
+@media screen and (min-width: 800px) {
+    #content table {
+        order:3;
+    }
+    #content ol{
+        order:1;
+    }
+    #superform{
+        order:2;
+    }
+  }

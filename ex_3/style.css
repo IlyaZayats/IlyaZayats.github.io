@@ -67,7 +67,7 @@ body footer{
     background-color: rgb(255, 2, 2);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     #content table {
         order:3;
     }

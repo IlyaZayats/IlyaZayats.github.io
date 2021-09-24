@@ -23,10 +23,16 @@
 
 #content table{
     text-align: center;
+    order: 3;
 }
 
 #superform{
     text-align: center;
+    order:2;
+}
+
+#content ol{
+    order:1;
 }
 
 #head_of_ex3{

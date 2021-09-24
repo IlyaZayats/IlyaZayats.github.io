@@ -75,12 +75,12 @@ body footer{
 
 @media screen and (min-width: 800px) {
     #content table {
-        order:3;
+        order:2;
     }
     #content ol{
         order:1;
     }
     #superform{
-        order:2;
+        order:3;
     }
   }

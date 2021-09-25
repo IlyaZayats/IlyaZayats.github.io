@@ -1,0 +1,43 @@
+header img {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+#topic{
+    padding-top:10px;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+#logo{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+table td{
+	border: 1px solid black;
+}
+
+table th{
+	border: 1px solid black;
+}
+
+#noteven_1 {
+    background: #4682B4;
+}
+#noteven_2 {
+    background: #4682B4;
+}
+#noteven_3 {
+    background: #4682B4;
+}
+#even_1 {
+    background: #FFFF00;
+}
+#even_2 {
+    background: #FFFF00;
+}

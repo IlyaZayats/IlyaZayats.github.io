@@ -1,0 +1,55 @@
+#link_1, #link_2, #link_3{
+    background-color: rgb(63, 156, 71);
+    font-family: cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+#content ol, #content table, #superform{
+    background-color: rgb(228, 228, 228);
+    font-family: cursive;
+}
+
+#content table{
+    text-align: center;
+}
+
+#superform{
+    text-align: center;
+}
+
+header main, header aside{
+    background-color: #6593b9;
+    font-family: cursive;
+    text-align: center;
+    height: 100%;
+}
+
+table td, th{
+	border: 1px solid black;
+}
+
+#noteven_1, #noteven_2, #noteven_3{
+    background: #4682B4;
+}
+#even_1,#even_2 {
+    background: rgb(96, 57, 189);
+}
+
+body footer{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(63, 156, 71);
+}
+
+@media screen and (min-width: 800px) {
+    #content table {
+        order:3;
+    }
+    #content ol{
+        order:1;
+    }
+    #superform{
+        order:2;
+    }
+  }

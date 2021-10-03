@@ -16,7 +16,11 @@ header main, header aside{
 }
 
 table td, th{
-	border: 1px solid black;
+  border: 1px solid black;
+}
+
+table {
+  width="100%";
 }
 
 #noteven_1, #noteven_2, #noteven_3{

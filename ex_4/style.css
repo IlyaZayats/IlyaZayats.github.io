@@ -1,0 +1,36 @@
+#link_1, #link_2, #link_3{
+    font-family: Andale Mono, monospace;
+}
+
+#bf_list, #content table, #superform{
+    font-family: Andale Mono, monospace;
+}
+
+#ex_4, #block-logo{
+    font-family: Andale Mono, monospace;
+    height: 100px;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+}
+
+table td, th{
+	border: 1px solid black;
+}
+
+#noteven_1, #noteven_2, #noteven_3{
+    background: #8f8f8f;
+}
+#even_1,#even_2 {
+    background: rgb(58, 58, 58);
+}
+
+body footer{
+    background-color: rgb(34, 34, 34);
+}
+
+body{
+    background-image: url(background.png);
+}

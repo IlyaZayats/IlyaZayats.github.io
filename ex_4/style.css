@@ -34,3 +34,7 @@ body footer{
 body{
     background-image: url(background.png);
 }
+
+#table_table{
+    width: 100%;
+}

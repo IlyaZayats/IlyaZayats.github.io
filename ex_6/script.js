@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
         flag = false;
         let select = event.target;
         let radios = document.getElementById("options");
-        let checkbox = document.getElementById("property")
+        let checkbox = document.getElementById("property");
         if(select.value=="cup"){
             radios.style.display="none";
             checkbox.style.display="none";

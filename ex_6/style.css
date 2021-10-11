@@ -1,0 +1,11 @@
+#property, #options{
+    display: none;
+}
+
+body{
+    background-image: url(background.png);
+}
+
+#first, #second, #third{
+    background-color: grey;
+}

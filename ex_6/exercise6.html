@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+  <head>
+    <title>Exercise6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="https://img.icons8.com/wired/64/000000/anonymous-mask.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+
+  
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row d-flex text-center px-2">
+        <div id="first" class="col-12 px-0 border border-dark rounded">
+          <h1>
+            Задание 6
+          </h1>
+        </div>
+        <div id="second" class="col-11 mt-1 pb-1 mx-auto px-0 border border-dark rounded">
+          <form>
+            <label>
+              Введите количество товара:<br/>
+              <input id="amount" name="amount" type="text"/>
+            </label><br/>
+            <label>
+              Выбирите тип товара:<br/>
+              <select name="list_of_goods">
+                <option value="cup">Кружка "Пивозавр"</option>
+                <option value="pants">Штаны "Пивозавр"</option>
+                <option value="t-shirt">Футболка "Пивозавр"</option>
+              </select>
+            </label><br/>
+            <div class="options" id="options">
+              Выбирите опцию товара:<br/>
+              <label><input type="radio" name="option" value="o1" >Красная</label>
+              <label><input type="radio" name="option" value="o2" >Белая</label>
+              <label><input type="radio" name="option" value="o3" >Синяя</label><br/>
+            </div>
+            <div class="property" id="property">
+              Выбирите свойство товара:<br/>
+              <label><input type="checkbox" name="property" value="p">С одной штаниной</label><br/>
+            </div>
+          </form>
+        </div>
+        <div id="third" class="col-12 px-0 mt-1 border border-dark rounded">
+          <h3 id="result"></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+  </body>
+  
+</html>

@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', function(event) {
 	let amount = 0;
 	let typeAll = [2500, 5000, 10000];
 	let type = typeAll[0];
-    let flag_1 = true, flag_2=true;
+    let flag_1 = true, flag_2=true, flag_3=true;
 	let result = document.getElementById("result");
 	result.innerHTML = "Пожалуйста, ведите данные";
 
@@ -41,17 +41,19 @@ window.addEventListener('DOMContentLoaded', function(event) {
 	let amountHTML = document.getElementById("amount");
 	amountHTML.addEventListener("change", function(event) {
 		if (re.test(event.target.value)) {
-
-			amount = parseInt(event.target.value);
+		amount = parseInt(event.target.value);
             if(flag_1 && flag_2){
-			    getPrice(amount, type);
-            } else if(flag_1){
+		getPrice(amount, type);
+            } else if(!flag_1){
                 getPriceOptions(amount, type, radioListener);
                 flag_1 = true;
-            } else{
+            } else if(!flag_2 && !flag_3){
                 result.innerHTML = (type - 1000) * amount;
                 flag_2 = true;
-            }
+		flag_3 = true;
+            } else if(flag_3){
+		getPrice(amount, type);
+		}
 
             let s = document.getElementsByName("list_of_goods");
 	        s[0].addEventListener("change", function(event) {
@@ -82,7 +84,7 @@ window.addEventListener('DOMContentLoaded', function(event) {
 		        radio.addEventListener("change", function(event) {
 			    radioListener = event.target.value;
 			    getPriceOptions(amount, type, radioListener);
-                flag_1 = false;
+                	    flag_1 = false;
 		        });
 	        });
 
@@ -90,9 +92,11 @@ window.addEventListener('DOMContentLoaded', function(event) {
 	        c[0].addEventListener("change", function(event) {
 		        if (event.target.checked && amount != 0) {
 			        result.innerHTML = (type - 1000) * amount;
-                    flag_2 = false;
+                    			flag_2 = false;
+					flag_3 = false;
 		        } else {
 			        getPrice(amount, type);
+					flag_3 = true;
 		        }
 	        });
 

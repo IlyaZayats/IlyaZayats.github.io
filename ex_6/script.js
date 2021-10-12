@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function(event) {
 	let type = typeAll[0];
     let flag_1 = true, flag_2=true, flag_3=true;
 	let result = document.getElementById("result");
-	result.innerHTML = "Пожалуйста, ведите данные";
+	result.innerHTML = "Пожалуйста, введите данные";
 
 	let re = /^\d+$/;
 

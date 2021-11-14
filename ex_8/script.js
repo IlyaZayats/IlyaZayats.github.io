@@ -53,13 +53,13 @@ $(document).ready(function(){
             body: JSON.stringify(formData)
         })
             .then(function(response){
-                console.log("Сообщение отправлено");
+                alert("Сообщение отправлено");
                 data.forEach((element)=>{element.value="";});
                 $("#check").prop("checked", false);
                 $("#submitButton").prop("disabled", true);
                 localStorage.clear();
             })
-            .catch(error => console.error(error))
+            .catch((error) => (alert(error))
     };
 
     const forms = $("#thatForm");

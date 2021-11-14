@@ -1,27 +1,27 @@
-function formShow(){
+function formShow() {
     $(".window-wrapper").show();
-    window.history.pushState({"isActive": true},"","#form");
+    window.history.pushState({ "isActive": true }, "", "#form");
     $(".wrapper").addClass("modal-opened");
     $(".background").addClass("blur");
 }
 
-function formHide(){
+function formHide() {
     $(".window-wrapper").hide();
-    window.history.pushState({"isActive": false},"","exercise8.html");
+    window.history.pushState({ "isActive": false }, "", "exercise8.html");
     $(".wrapper").removeClass("modal-opened");
     $(".background").removeClass("blur");
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $(document).mouseup(function (e){
-        if(!$(".window-wrapper").is(e.target) && $(".window-wrapper").has(e.target).length === 0){
+    $(document).mouseup(function (e) {
+        if (!$(".window-wrapper").is(e.target) && $(".window-wrapper").has(e.target).length === 0) {
             formHide();
         }
     });
 
-    $("#check").change(function(){
-        if($("#check").is(":checked")){
+    $("#check").change(function () {
+        if ($("#check").is(":checked")) {
             $("#submitButton").prop("disabled", false);
         } else {
             $("#submitButton").prop("disabled", true);
@@ -29,20 +29,21 @@ $(document).ready(function(){
     });
 
     let data = document.querySelectorAll(".info");
-    data.forEach(function(element){
+    data.forEach(function (element) {
         element.value = localStorage.getItem(element.name);
-        element.addEventListener("blur",function(event){
+        element.addEventListener("blur", function (event) {
             localStorage.setItem(event.target.name, event.target.value);
         });
     });
 
-    window.addEventListener("popstate",function(event){
-        if(event.state.isActive){
+    window.addEventListener("popstate", function (event) {
+        if (event.state.isActive) {
             formShow();
-        } else{
+        } else {
             formHide();
         }
     });
+
     const ajaxSend = (formData) => {
         fetch("https://formcarry.com/s/1TauRT8f23J", {
             method: "POST",
@@ -52,14 +53,14 @@ $(document).ready(function(){
             },
             body: JSON.stringify(formData)
         })
-            .then(function(response){
+            .then(function (response) {
                 alert("Сообщение отправлено");
-                data.forEach((element)=>{element.value="";});
+                data.forEach((element) => { element.value = ""; });
                 $("#check").prop("checked", false);
                 $("#submitButton").prop("disabled", true);
                 localStorage.clear();
             })
-            .catch((error) => (alert(error))
+            .catch(error => alert(error))
     };
 
     const forms = $("#thatForm");
@@ -73,4 +74,13 @@ $(document).ready(function(){
             ajaxSend(formData);
         });
     };
+
+
+
+
+
+
+
+
+
 });

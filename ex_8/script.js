@@ -60,7 +60,7 @@ $(document).ready(function () {
                 $("#submitButton").prop("disabled", true);
                 localStorage.clear();
             })
-            .catch(error => alert(error))
+            .catch((error) => {alert(error);})
     };
 
     const forms = $("#thatForm");

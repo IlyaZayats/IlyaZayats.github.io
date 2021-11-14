@@ -75,12 +75,4 @@ $(document).ready(function () {
         });
     };
 
-
-
-
-
-
-
-
-
 });

@@ -21,10 +21,10 @@ $(document).ready(function(){
     });
 
     $("#check").change(function(){
-        if($("#check").is(':checked')){
-            $("#submitButton").prop('disabled', false);
+        if($("#check").is(":checked")){
+            $("#submitButton").prop("disabled", false);
         } else {
-            $("#submitButton").prop('disabled', true);
+            $("#submitButton").prop("disabled", true);
         }
     });
 
@@ -43,18 +43,17 @@ $(document).ready(function(){
             formHide();
         }
     });
-    
     const ajaxSend = (formData) => {
-        fetch('https://formcarry.com/s/1TauRT8f23J', {
-            method: 'POST',
+        fetch("https://formcarry.com/s/1TauRT8f23J", {
+            method: "POST",
             headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
+                "Content-Type": "application/json",
+                "Accept": "application/json"
             },
             body: JSON.stringify(formData)
         })
             .then(function(response){
-                console.log('Сообщение отправлено');
+                console.log("Сообщение отправлено");
                 data.forEach((element)=>{element.value="";});
                 $("#check").prop("checked", false);
                 $("#submitButton").prop("disabled", true);
@@ -65,7 +64,7 @@ $(document).ready(function(){
 
     const forms = $("#thatForm");
     for (let i = 0; i < forms.length; i++) {
-        forms[i].addEventListener('submit', function (e) {
+        forms[i].addEventListener("submit", function (e) {
             e.preventDefault();
 
             let formData = new FormData(this);
@@ -74,13 +73,4 @@ $(document).ready(function(){
             ajaxSend(formData);
         });
     };
-
-
-    
-    
-
-
-
-
-    
 });

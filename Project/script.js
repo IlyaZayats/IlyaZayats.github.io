@@ -1,5 +1,7 @@
 $(document).ready(function (){
-
+    
+    
+    /*
     const formModal = $("formModal");
     formModal.addEventListener("show.bs.modal", (ev => window.history.pushState({ "isActive": true }, "", "#form")));
     formModal.addEventListener("hide.bs.modal", (ev => window.history.pushState({ "isActive": true }, "", "project.html")));
@@ -11,6 +13,7 @@ $(document).ready(function (){
             formModal.hide();
         }
     };
+    */
 
     $("#check").change(function () {
         if ($("#check").is(":checked")) {
